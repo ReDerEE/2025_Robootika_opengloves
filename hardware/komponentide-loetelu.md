@@ -11,8 +11,8 @@
 - _Kaablid_
 - _Kaablite otsad_
 
-- _(5x) Vedru (Vaadakse lingid/allikad alla)_
-- _(5x) Nööri (Vaadakse lingid/allikad alla)_
+- _(5x) Vedru (Vaadake lingid/allikad alla)_
+- _(5x) Nööri (Vaadake lingid/allikad alla)_
 
 3D Prinditud:
 - _End caps (hardware/EndCaps.stl)_

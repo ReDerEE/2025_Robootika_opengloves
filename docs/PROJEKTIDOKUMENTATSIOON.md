@@ -3,12 +3,9 @@
 ## 1. Projekti eesmärk ja seadme lühikirjeldus
 **Mis asi see on, mida ja miks me teeme? Millist praktilist probleemi see lahendab?**
 
-Näide stiilist:
-- Meie projekti eesmärk on luua ventilaator, mida saab juhtida infrapuna puldiga.
-- Seadet saab kasutada näiteks ruumi jahutamiseks olukorras, kus käega lülitile ulatamine on ebamugav.
-- Peamised komponendid: elektrimootor, servo, ventilaatori labad (3D prinditud), Arduino mikrokontroller.
-
-👉 _Asenda see kirjeldus enda seadme kirjeldusega._
+- Meie projekti eesmärk on luua haptilised kindad, mida saab kasutada virtuaal reaalsues (VR), virutaalsete objektide tunnetamiseks.
+- Seade annab võimaluse oma enda kätega tunnetada virtuaalseid objekte, aitab kaasa virtuaal reaalsuse immersiooniga.
+- Peamised komponendid: ESP32 mikrokontroller, akupangad, servomootorid, joystick, potentsiomeetrid, nupp, vedrud, nöörid, 3d prinditud osad kinnitamiseks ja kandmiseks. 
 
 ---
 

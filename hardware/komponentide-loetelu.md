@@ -8,11 +8,10 @@
 - _(1x) Joystick, Joystick for Arduino Dual-axis_
 - _(5x) Rotary Potentiometer (6mm, 3 pin, 10K ohm)
 - _(1x) Momentary Push Button Switch_  
-- _Kaablid_
-- _Kaablite otsad_
-
 - _(5x) Vedru (Vaadake lingid/allikad alla)_
 - _(5x) Nööri (Vaadake lingid/allikad alla)_
+- _Kaablid_
+- _Kaablite otsad_
 
 3D Prinditud:
 - _End caps (hardware/EndCaps.stl)_

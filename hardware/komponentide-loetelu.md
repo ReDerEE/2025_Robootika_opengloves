@@ -28,7 +28,7 @@
 - Xiaomi Redmi Power Bank 20000mAh – [Arvutitark](https://arvutitark.ee/en/smart-devices/smart-device-accessories/akupangad/xiaomi-redmi-fast-charge-power-bank-20000-mah-black-18-w-1017875)
 - MG90S Micro Servo Motor – [Aliexpress](https://www.aliexpress.com/item/1005005672961991.html?spm=a2g0o.order_list.order_list_main.20.30fa1802Zp5XaK)
 - Joystick for Arduino Dual-axis - [Aliexpress](https://www.aliexpress.com/item/1005007915984781.html?spm=a2g0o.order_list.order_list_main.30.30fa1802Zp5XaK)
-- Nupud - [Aliexpress_ET](https://www.aliexpress.com/item/4001081730289.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK)[Aliexpress_EN](https://www.aliexpress.us/item/2255800895415537.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
+- Nupud - [Aliexpress_ET](https://www.aliexpress.com/item/4001081730289.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK) [Aliexpress_EN](https://www.aliexpress.us/item/2255800895415537.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
 - Potentsiomeetrid - [Aliexpress](https://www.aliexpress.com/item/33011428749.html?spm=a2g0o.order_list.order_list_main.25.30fa1802Zp5XaK)
 - Kaablid - [Aliexpress](https://www.aliexpress.com/item/1005007156114505.html?spm=a2g0o.order_list.order_list_main.50.30fa1802Zp5XaK)
 - Kaablite otsad [Aliexpress](https://www.aliexpress.com/item/1005007425641197.html?spm=a2g0o.order_list.order_list_main.15.30fa1802Zp5XaK)

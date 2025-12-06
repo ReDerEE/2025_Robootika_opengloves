@@ -14,16 +14,16 @@
 - _Kaablite otsad_
 
 3D Prinditud:
-- _End caps (hardware/EndCaps.stl)_
-- _Guide Nodes (hardware/GuideNode.STL)_
-- _Guide Rings (hardware/guideRings.stl)_
-- _Haptic Spool (hardware/HapticSpool.stl)_
-- _Left hand mount (hardware/LeftHandMount.STL)_
-- _Potentiometer holder (hardware/PotHolder.STL)_
-- _Quest2 holder (hardware/Quest2Holder.stl)
-- _Right hand mount (hardware/RightHandMount.STL)_
-- _Spool cover (hardware/Spoolcover.stl)_
-- _Tensioner (hardware/Tensioner.stl)_
+- _End caps (hardware/3D/EndCaps.stl)_
+- _Guide Nodes (hardware/3D/GuideNode.STL)_
+- _Guide Rings (hardware/3D/guideRings.stl)_
+- _Haptic Spool (hardware/3D/HapticSpool.stl)_
+- _Left hand mount (hardware/3D/LeftHandMount.STL)_
+- _Potentiometer holder (hardware/3D/PotHolder.STL)_
+- _Quest2 holder (hardware/3D/Quest2Holder.stl)
+- _Right hand mount (hardware/3D/RightHandMount.STL)_
+- _Spool cover (hardware/3D/Spoolcover.stl)_
+- _Tensioner (hardware/3D/Tensioner.stl)_
 
 ## Lingid / allikad
 - ESP32-WROOM-32U WROVER – [Aliexpress](https://www.aliexpress.com/item/1005008209898668.html?spm=a2g0o.order_list.order_list_main.35.30fa1802Zp5XaK&gatewayAdapt=4itemAdapt)

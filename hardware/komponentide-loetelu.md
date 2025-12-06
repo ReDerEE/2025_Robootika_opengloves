@@ -11,6 +11,9 @@
 - _Kaablid_
 - _Kaablite otsad_
 
+- _(5x) Vedru (Vaadakse lingid/allikad alla)_
+- _(5x) Nööri (Vaadakse lingid/allikad alla)_
+
 3D Prinditud:
 - _End caps (hardware/EndCaps.stl)_
 - _Guide Nodes (hardware/GuideNode.STL)_
@@ -32,3 +35,5 @@
 - Potentsiomeetrid - [Aliexpress](https://www.aliexpress.com/item/33011428749.html?spm=a2g0o.order_list.order_list_main.25.30fa1802Zp5XaK)
 - Kaablid - [Aliexpress](https://www.aliexpress.com/item/1005007156114505.html?spm=a2g0o.order_list.order_list_main.50.30fa1802Zp5XaK)
 - Kaablite otsad [Aliexpress](https://www.aliexpress.com/item/1005007425641197.html?spm=a2g0o.order_list.order_list_main.15.30fa1802Zp5XaK)
+- Nöörid ja vedrud saadud antud toote lahti võtmisel [Aliexpress](https://www.aliexpress.us/item/3256803821144861.html?spm=a2g0o.order_list.order_list_main.45.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt) (Nöörid ja vedrud saadud antud toote lahti võtmisel)
+

@@ -12,27 +12,34 @@
 ## 2. Sisendite loetelu
 **Millised on süsteemi poolt loetavad / mõõdetavad sisendid? Millega neid mõõdetakse / tuvastatakse?**
 
-Kirjelda kõik sisendid eraldi punktidena.  
-Näited (asenda enda projektiga):
+- Potentsiomeetrid:
+  - Väikesõrme painutus -> analoogpinge loetakse ESP32 pinilt **PIN_PINKY (36)**
+  - Nimetissõrme painutus -> analoogpinge ESP32 pinilt **PIN_RING (39)**
+  - Keskmise sõrme painutus -> analoogpinge ESP32 pinilt **PIN_MIDDLE (34)**
+  - Nimetissõrme painutus -> analoogpinge ESP32 pinilt **PIN_INDEX (35)**
+  - Pöidla painutus -> analoogpinge ESP32 pinilt **PIN_THUMB (32)**
 
-- Nupp "vasakule" puldil → IR-sensor loeb signaali
-- Nupp "paremale" puldil → IR-sensor loeb signaali
-- Nupp "+" puldil → IR-sensor loeb signaali (tõsta kiirust)
-- Nupp "-" puldil → IR-sensor loeb signaali (vähenda kiirust)
-- ON/OFF nupp → IR-sensor loeb signaali
-
-👉 _Kui sinu süsteem kasutab muid sensoreid (ultraheli, temperatuuriandur, valgusandur, joystick, BLE telefonis vms), kirjelda need siin koos füüsilise sisendi allikaga._
+- Joystick
+  - Joystick X-telg -> analoogpinge ESP32 pinilt **PIN_JOY_X (12)**
+  - Joystick Y-telg -> analoogpinge ESP32 pinilt **PIN_JOY_Y (14)**
+  - Joystick vajutusnupp -> digitaalne sisend ESP32 pinilt **PIN_JOY_BTN (26)**
 
 ---
 
 ## 3. Väljundite loetelu
 **Mida süsteem teeb / muudab? Millega väljund realiseeritakse?**
 
-Näited (asenda enda projektiga):
-- Ventilaator pöörleb kiiremini / aeglasemalt → DC mootor
-- Ventilaator suunab õhu vasakule / paremale → servo
-- LED süttib / kustub → LED
-- Ekraanile kuvatakse temperatuur → OLED ekraan
+- Sõrmede jõutagasiside (force feedback):
+  Osutavad vastupanu, kui kasutaja puudutab midagi virtuaal reaalsuses.
+  - Väikesõrme servo/mootor -> **PIN_PINKY_MOTOR (5)**
+  - Nimetissõrme servo/mootor -> **PIN_RING_MOTOR (18)**
+  - Keskmise servo/mootor -> **PIN_MIDDLE_MOTOR (19)**
+  - Nimetissõrme servo/mootor -> **PIN_INDEX_MOTOR (16)**
+  - Pöidla servo/mootor -> **PIN_THUMB_MOTOR (17)**
+
+- Debug LED -> **LED (PIN 2)**
+
+- Bluetooth väljund -> Saadab sõrmede asendid, Žestide olekud, Joysticki asendi.
 
 ---
 
@@ -52,6 +59,8 @@ Näited (kohanda enda projektile):
 
 👉 _Pane siia KÕIK kokkulepitud reeglid. Need reeglid on alus, mille järgi hiljem hinnatakse, kas teie lahendus vastab eesmärgile._
 
+- Kasutaja painutab sõrme -> potentsiomeeter muudab analoogväärtust ->  väärtus saadetakse Bluetoothi kaudu VR süsteemile.
+
 ---
 
 ## 5. Süsteemi füüsiliste komponentide loetelu
@@ -59,15 +68,16 @@ Näited (kohanda enda projektile):
 
 Tabelina või punktidena. Nt:
 
-- Arduino Uno (mikrokontroller)
-- IR-vastuvõtja + pult (tüüp: XY123)  
-- Väike elektrimootor (DC, ___ V)
-- Mootoridraiver (L298N vms)
-- Servo (mudel: SG90 / MG90S / muu)
-- 3D-prinditud ventilaatori labad (STL-failid lisage kataloogi `hardware/`)
-- Toiteallikas (___ V / ___ A)
-
-👉 _Kui ise tegite 3D mudeli, lisage STL või Fusion faili `hardware/` alla. Kui kasutasite netist leitud mudelit, märkige allikas._
+- _(1x) ESP32-WROOM-32U WROVER_ [Aliexpress](https://www.aliexpress.com/item/1005008209898668.html?spm=a2g0o.order_list.order_list_main.35.30fa1802Zp5XaK&gatewayAdapt=4itemAdapt)
+- _(2x) Xiaomi Redmi Power Bank (20000mAh)_ [Arvutitark](https://arvutitark.ee/en/smart-devices/smart-device-accessories/akupangad/xiaomi-redmi-fast-charge-power-bank-20000-mah-black-18-w-1017875)
+- _(5x) MG90S Micro Servo Motor (180)_ [Aliexpress](https://www.aliexpress.com/item/1005005672961991.html?spm=a2g0o.order_list.order_list_main.20.30fa1802Zp5XaK)
+- _(1x) Joystick, Joystick for Arduino Dual-axis_ [Aliexpress](https://www.aliexpress.com/item/1005007915984781.html?spm=a2g0o.order_list.order_list_main.30.30fa1802Zp5XaK)
+- _(5x) Rotary Potentiometer (6mm, 3 pin, 10K ohm) [Aliexpress](https://www.aliexpress.com/item/33011428749.html?spm=a2g0o.order_list.order_list_main.25.30fa1802Zp5XaK)
+- _(1x) Momentary Push Button Switch_  [Aliexpress_ET](https://www.aliexpress.com/item/4001081730289.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK) [Aliexpress_EN](https://www.aliexpress.us/item/2255800895415537.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
+- _(5x) Vedru ja (5x) Nööri (Saadud lingitud toote lahti lammutamisel.)_ [Aliexpress](https://www.aliexpress.us/item/3256803821144861.html?spm=a2g0o.order_list.order_list_main.45.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
+- _Kaablid_ [Aliexpress](https://www.aliexpress.com/item/1005007156114505.html?spm=a2g0o.order_list.order_list_main.50.30fa1802Zp5XaK)
+- _Kaablite otsad_ [Aliexpress](https://www.aliexpress.com/item/1005007425641197.html?spm=a2g0o.order_list.order_list_main.15.30fa1802Zp5XaK)
+- _3D prinditud osad_ (hardware/3D kaustas)
 
 ---
 

@@ -24,6 +24,7 @@
   - Joystick Y-telg -> analoogpinge ESP32 pinilt **PIN_JOY_Y (14)**
   - Joystick vajutusnupp -> digitaalne sisend ESP32 pinilt **PIN_JOY_BTN (26)**
 
+- Bluetooth sisend -> Saab kätte mootorite kontrollimiseks vajaliku informatsiooni.
 ---
 
 ## 3. Väljundite loetelu
@@ -50,7 +51,6 @@
 - Kui kasutaja liigutab käe interactible objekti lähedusse, siis see paneb servod käima, et kasutaja ei saaks objekti mõistes näppe sellest läbi pista(force feedback osa)
 - Kui kasutaja liigutab joystick'i, siis see saadetakse driver'ile ja see tõlgib seda reaalsel kasutatavaks vr joystick'i liigutuseks 
 
-
 ---
 
 ## 5. Süsteemi füüsiliste komponentide loetelu
@@ -73,22 +73,47 @@ Tabelina või punktidena. Nt:
 
 ## 6. Ühendusskeem
 **Kuidas kõik osad on omavahel ühendatud?**
+[hardware/wiring-diagram.png]
 
-- Lisa siia pilt või skeemi kirjeldus.
-- Fail `hardware/wiring-diagram.png` peab näitama vähemalt:
-  - milline pin Arduinol läheb millise komponendi sisendisse,
-  - kuidas on toide ühendatud.
+- Väikesõrme Potentsiomeeteri asend -> **PIN_PINKY (36)**
+- Nimetissõrme Potentsiomeeteri asend -> **PIN_RING (39)**
+- Keskmise sõrme Potentsiomeeteri asend -> **PIN_MIDDLE (34)**
+- Nimetissõrme Potentsiomeeteri asend -> **PIN_INDEX (35)**
+- Pöidla Potentsiomeeteri asend -> **PIN_THUMB (32)**
 
-Kui skeemi pole veel joonistatud, siis vähemalt kirjelda tekstina, nt:
+- Joystick X-telg asend -> **PIN_JOY_X (12)**
+- Joystick Y-telg asend -> **PIN_JOY_Y (14)**
+- Joystick nupu vajutus -> **PIN_JOY_BTN (26)**
 
-- IR-sensor OUT → Arduino digipin 7  
-- Servo signaal → Arduino digipin 6  
-- Mootoridraiveri IN1 → Arduino digipin 2  
-- Mootoridraiveri IN2 → Arduino digipin 3  
-- Mootoridraiveri ENA → Arduino pin 5 (PWM)  
-- GND kõik ühises massis
+- Väikesõrme servo/mootor -> **PIN_PINKY_MOTOR (5)**
+- Nimetissõrme servo/mootor -> **PIN_RING_MOTOR (18)**
+- Keskmise servo/mootor -> **PIN_MIDDLE_MOTOR (19)**
+- Nimetissõrme servo/mootor -> **PIN_INDEX_MOTOR (16)**
+- Pöidla servo/mootor -> **PIN_THUMB_MOTOR (17)**
 
-👉 _Skeem peab lõpuks olemas olema, mitte ainult tekst._
+- Väikesõrme Potentsiomeeter ground -> **PIN(GROUND)**
+- Nimetissõrme Potentsiomeeter ground -> **PIN(GROUND)**
+- Keskmise sõrme Potentsiomeeter ground -> **PIN(GROUND)**
+- Nimetissõrme Potentsiomeeter ground -> **PIN(GROUND)**
+- Pöidla Potentsiomeeter ground -> **PIN(GROUND)**
+- Väikesõrme servo/mootor ground -> **PIN(GROUND)**
+- Nimetissõrme servo/mootor ground -> **PIN(GROUND)**
+- Keskmise servo/mootor ground -> **PIN(GROUND)**
+- Nimetissõrme servo/mootor ground -> **PIN(GROUND)**
+- Pöidla servo/mootor ground -> **PIN(GROUND)**
+- Joystick ground -> **PIN(GROUND)**
+- Nupp ground -> **PIN(GROUND)**
+- Vooluallika ground -> **PIN(GROUND)**
+
+- Vooluallikas 1 -> **PIN(5V/Voltage In)** või **USB-C Input**
+- Vooluallikas 2 -> Kõik servomootorid
+
+- **PIN(3.3V)** -> Väikesõrme Potentsiomeeteri vool
+- **PIN(3.3V)** -> Nimetissõrme Potentsiomeeteri vool
+- **PIN(3.3V)** -> Keskmise sõrme Potentsiomeeteri vool
+- **PIN(3.3V)** -> Nimetissõrme Potentsiomeeteri vool
+- **PIN(3.3V)** -> Pöidla Potentsiomeeteri vool
+- **PIN(3.3V)** -> Joystick vool
 
 ---
 

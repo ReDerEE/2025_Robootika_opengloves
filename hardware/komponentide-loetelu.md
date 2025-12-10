@@ -3,7 +3,7 @@
 ## Põhikomponendid
 **Komponendid ühe (1) kinda kohta, mõlema käe jaoks kahekordistada.**
 - _(1x) ESP32-WROOM-32U WROVER_
-- _(2x) Xiaomi Redmi Power Bank (20000mAh)_
+- _(1x) Xiaomi Redmi Power Bank (20000mAh)_
 - _(5x) MG90S Micro Servo Motor (180)_
 - _(1x) Joystick, Joystick for Arduino Dual-axis_
 - _(5x) Rotary Potentiometer (6mm, 3 pin, 10K ohm)

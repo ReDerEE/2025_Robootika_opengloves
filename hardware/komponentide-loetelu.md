@@ -7,7 +7,7 @@
 - _(5x) MG90S Micro Servo Motor (180)_
 - _(1x) Joystick, Joystick for Arduino Dual-axis_
 - _(5x) Rotary Potentiometer (6mm, 3 pin, 10K ohm)
-- _(1x) Momentary Push Button Switch_  
+- _(Optional) Momentary Push Button Switch_  
 - _(5x) Vedru (Vaadake lingid/allikad alla)_
 - _(5x) Nööri (Vaadake lingid/allikad alla)_
 - _Kaablid_

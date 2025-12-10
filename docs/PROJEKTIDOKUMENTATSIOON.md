@@ -63,7 +63,7 @@ Tabelina või punktidena. Nt:
 - _(5x) MG90S Micro Servo Motor (180)_ [Aliexpress](https://www.aliexpress.com/item/1005005672961991.html?spm=a2g0o.order_list.order_list_main.20.30fa1802Zp5XaK)
 - _(1x) Joystick, Joystick for Arduino Dual-axis_ [Aliexpress](https://www.aliexpress.com/item/1005007915984781.html?spm=a2g0o.order_list.order_list_main.30.30fa1802Zp5XaK)
 - _(5x) Rotary Potentiometer (6mm, 3 pin, 10K ohm) [Aliexpress](https://www.aliexpress.com/item/33011428749.html?spm=a2g0o.order_list.order_list_main.25.30fa1802Zp5XaK)
-- _(1x) Momentary Push Button Switch_  [Aliexpress_ET](https://www.aliexpress.com/item/4001081730289.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK) [Aliexpress_EN](https://www.aliexpress.us/item/2255800895415537.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
+- _(Optional) Momentary Push Button Switch_  [Aliexpress_ET](https://www.aliexpress.com/item/4001081730289.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK) [Aliexpress_EN](https://www.aliexpress.us/item/2255800895415537.html?spm=a2g0o.order_list.order_list_main.40.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
 - _(5x) Vedru ja (5x) Nööri (Saadud lingitud toote lahti lammutamisel.)_ [Aliexpress](https://www.aliexpress.us/item/3256803821144861.html?spm=a2g0o.order_list.order_list_main.45.30fa1802Zp5XaK&gatewayAdapt=glo2usa4itemAdapt)
 - _Kaablid_ [Aliexpress](https://www.aliexpress.com/item/1005007156114505.html?spm=a2g0o.order_list.order_list_main.50.30fa1802Zp5XaK)
 - _Kaablite otsad_ [Aliexpress](https://www.aliexpress.com/item/1005007425641197.html?spm=a2g0o.order_list.order_list_main.15.30fa1802Zp5XaK)
@@ -119,5 +119,10 @@ Tabelina või punktidena. Nt:
 
 ## 7. Süsteemi juhtiv kood (või pseudokood)
 **Kirjelda programmi loogikat nii, et seda on võimalik aru saada ka hiljem.**  
-Kui kood töötab, pane siia lühike selgitus + viide failile `src/projektinimi.ino`.  
-Kui kood pole veel valmis, lisa siia pseudokood.
+[src/lucidgloves-main]  
+
+Kontroller loeb potentsiomeetrite ja joystick-i olekut ning saab läbi bluetoothi informatsiooni driverilt.
+Kontroller käivitab servod, kui kasutaja puudutab virtuaalses reaalsuses objekti.
+Servod hoiavad käe ja sõrmed paigal, ei lase neil virtuaalse objekti sisse vajuda.
+Kontroller saadab driverile potentsiomeetrite ja joystick-i seisundid (nupud ka, kui on).
+

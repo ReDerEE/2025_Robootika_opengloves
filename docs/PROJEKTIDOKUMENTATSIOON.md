@@ -46,20 +46,10 @@
 ## 4. Nõuded loodavale seadmele
 **Mis peab toimuma, kui kasutaja teeb mingi toimingu? Kirjelda käitumisloogika.**
 
-Kirjuta reeglid kujul "Kui X, siis Y".  
-Näited (kohanda enda projektile):
+- Kui näpp liigutatakse, siis see saadab näppude painduvuse edasi, siis driver tõlgendab seda Valve Knuckles grip väärtuseks.
+- Kui kasutaja liigutab käe interactible objekti lähedusse, siis see paneb servod käima, et kasutaja ei saaks objekti mõistes näppe sellest läbi pista(force feedback osa)
+- Kui kasutaja liigutab joystick'i, siis see saadetakse driver'ile ja see tõlgib seda reaalsel kasutatavaks vr joystick'i liigutuseks 
 
-- Kui vajutatakse ON/OFF nuppu, siis:
-  - kui ventilaator on väljas → ventilaator lülitub sisse keskmise kiirusega;
-  - kui ventilaator töötab → ventilaator pöördub keskasendisse ja lülitub välja.
-
-- Kui vajutatakse vasak/noole nuppu, liigub ventilaatori pea iga vajutusega X kraadi vasakule, kuni vasak piir on käes. Kui piir käes, siis rohkem ei liigu.
-
-- Kui ventilaator töötab maksimumkiirusel ja vajutatakse "+" → kiirus ei suurene enam.
-
-👉 _Pane siia KÕIK kokkulepitud reeglid. Need reeglid on alus, mille järgi hiljem hinnatakse, kas teie lahendus vastab eesmärgile._
-
-- Kasutaja painutab sõrme -> potentsiomeeter muudab analoogväärtust ->  väärtus saadetakse Bluetoothi kaudu VR süsteemile.
 
 ---
 
